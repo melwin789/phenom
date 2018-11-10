@@ -1,0 +1,22 @@
+<h1>Posts</h1>
+
+<!-- <table>
+  <thead>
+    <td>UserName</td>
+    <td>Email</td>
+    <td>Website</td>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of posts">
+      <td>{{user$.name}}</td>
+      <td>{{user$.email}}</td>
+      <td>{{user$.phone}}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<p *ngFor="let post of posts">
+  <a routerLink="">{{post.title}}</a>
+
+  <span>{{post.body}}</span>
+</p>

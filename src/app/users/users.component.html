@@ -1,0 +1,27 @@
+<h1>Users</h1>
+
+<!-- <ul>
+  <li *ngFor="let user of users">
+    <a routerLink="/details/{{user.id}}">{{user.name}}</a>
+    <br/>
+    <ul>
+      <li>{{user.email}}</li>
+      <li><a href="http://{{user.website}}">{{user.website}}</a></li>
+    </ul>
+  </li>
+</ul> -->
+
+<table class="table-striped">
+  <thead>
+    <td>UserName</td>
+    <td>Email</td>
+    <td>Website</td>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td><a routerLink="/details/{{user.id}}">{{user.name}}</a></td>
+      <td>{{user.email}}</td>
+      <td><a href="http://{{user.website}}">{{user.website}}</a></td>
+    </tr>
+  </tbody>
+</table>

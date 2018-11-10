@@ -1,0 +1,39 @@
+<div id="container">
+  <nav>
+    <ul>
+      <li>
+        <a routerLink="">
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+          <a routerLink="users">
+            Users
+          </a>
+      </li>
+      <li>
+          <a routerLink="posts">
+            Posts
+          </a>
+      </li>
+      <!-- <li>
+          <a routerLink="">
+              <i class="material-icons" style="height:14px">
+                person
+              </i>
+          </a>
+        </li>
+        <li>
+            <a routerLink="">
+                <i class="material-icons">
+                  power_settings_new
+                </i>
+            </a>
+          </li> -->
+    </ul>
+  </nav>
+
+  <div id="content" class="container">
+      <router-outlet></router-outlet>
+  </div>
+</div>
